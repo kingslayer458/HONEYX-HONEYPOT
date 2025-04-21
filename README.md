@@ -1,4 +1,4 @@
-# Honeypot Server
+# HONEYX-HONEYPOT
 
 A Node.js-based honeypot and analytics platform designed to attract, log, and analyze attacker behavior. Includes fake file traps, API endpoints for analytics, and an optional modern dashboard UI.
 
