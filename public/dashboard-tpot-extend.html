@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honeypot Dashboard</title>
+  <link rel="stylesheet" href="/dashboard-tpot.css">
+  <link rel='stylesheet' href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'/>
+  <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+  <script src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <h1 class="logo">HONEYPOT</h1>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#" onclick="showPanel('feed')">Live Feed</a>
+      <a href="#" onclick="showPanel('logs')">Logs</a>
+      <a href="#" onclick="showPanel('settings')">Settings</a>
+      <a href="/logout">Logout</a>
+    </nav>
+  </aside>
+  <main class="main-grid">
+    <section class="panel panel-main">
+      <div class="panel-header">Attack Timeline</div>
+      <canvas id="timelineChart"></canvas>
+    </section>
+    <section class="panel panel-map">
+      <div class="panel-header">Attack Origins</div>
+      <div id="map" style="height:260px;"></div>
+    </section>
+    <section class="panel panel-pie">
+      <div class="panel-header">Attack Types</div>
+      <canvas id="typeChart"></canvas>
+    </section>
+    <section class="panel panel-bar">
+      <div class="panel-header">Top Attackers</div>
+      <canvas id="topAttackersChart"></canvas>
+    </section>
+    <section class="panel panel-bar" style="grid-row: 3; grid-column: 1;">
+      <div class="panel-header">Top Ports</div>
+      <canvas id="topPortsChart"></canvas>
+    </section>
+    <section class="panel panel-pie" style="grid-row: 3; grid-column: 2;">
+      <div class="panel-header">Protocol Breakdown</div>
+      <canvas id="protoPieChart"></canvas>
+    </section>
+    <section class="panel panel-feed" id="feedPanel">
+      <div class="panel-header">Live Feed</div>
+      <ul id="liveFeed"></ul>
+    </section>
+    <section class="panel panel-logs" id="logsPanel" style="display:none;">
+      <div class="panel-header">Logs</div>
+      <pre id="logsArea"></pre>
+    </section>
+    <section class="panel panel-settings" id="settingsPanel" style="display:none;">
+      <div class="panel-header">Settings</div>
+      <div id="settingsArea">(Settings UI coming soon)</div>
+    </section>
+  </main>
+  <script src="/dashboard-tpot.js"></script>
+</body>
+</html>

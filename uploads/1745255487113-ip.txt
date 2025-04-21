@@ -1,0 +1,19 @@
+
+IP                   : 27.4.247.52
+IP Type              : IPv4
+User OS              : Windows 10
+Version              : 10.0;
+Browser              : Chrome
+Location             : Mumbai, India, Asia
+GeoLocation(lat, lon): 19.0759837, 72.8776559
+Currency             : Indian Rupee
+
+IP                   : 38.137.30.11
+IP Type              : IPv4
+User OS              : Android
+Version              : 10;
+Browser              : Handheld Browser
+Location             : Chandigarh, India, Asia
+GeoLocation(lat, lon): 30.7333148, 76.7794179
+Currency             : Indian Rupee
+

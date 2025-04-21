@@ -1,0 +1,119 @@
+body {
+  background: #181c25;
+  color: #eaeaea;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.dashboard-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #23283a;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 32px 40px 40px 40px;
+}
+h2 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #8ec6f8;
+}
+.logout-link {
+  float: right;
+  color: #ff6767;
+  text-decoration: none;
+  font-weight: bold;
+}
+.stats {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0;
+}
+.stat-box {
+  background: #20243a;
+  border-radius: 10px;
+  padding: 20px 32px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+.stat-box h3 {
+  margin: 0 0 8px 0;
+  color: #ffe066;
+  font-size: 1.2rem;
+}
+.stat-box p {
+  font-size: 2rem;
+  margin: 0;
+  color: #fff;
+}
+select, button {
+  background: #23283a;
+  color: #fff;
+  border: 1px solid #3a4060;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin: 0 8px 0 0;
+  font-size: 1rem;
+}
+select:focus, button:focus {
+  outline: 2px solid #8ec6f8;
+}
+#trend, #map {
+  margin: 28px auto 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  display: block;
+}
+#trend {
+  background: #fff;
+  padding: 10px;
+}
+#map {
+  margin-top: 28px;
+}
+.log-section {
+  margin-top: 36px;
+  background: #1a1e2b;
+  border-radius: 10px;
+  padding: 18px 22px;
+  max-height: 350px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.log-section pre {
+  color: #8ec6f8;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.export-links {
+  margin: 18px 0 0 0;
+}
+.export-links a {
+  color: #8ec6f8;
+  margin-right: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.export-links a:hover {
+  color: #ffe066;
+}
+.filter-form {
+  margin-bottom: 18px;
+}
+@media (max-width: 800px) {
+  .dashboard-container {
+    padding: 18px 6px 24px 6px;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #trend, #map {
+    width: 100% !important;
+    max-width: 98vw;
+  }
+}
