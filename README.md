@@ -44,7 +44,6 @@ HONEYX-HONEYPOT is a comprehensive honeypot solution designed to attract, log, a
 - **Threat Intelligence**: Integration with threat intelligence sources
 
 ### Advanced Dashboard
-- **Netflix-inspired UI**: Modern, responsive design with dark mode support
 - **Real-time Visualizations**: Interactive charts and maps showing attack data
 - **Attack Timeline**: Chronological view of attack events
 - **Top Attackers**: Identification of most persistent threat actors
