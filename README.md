@@ -192,6 +192,9 @@ The Netflix-inspired dashboard provides a comprehensive view of honeypot activit
 - **Time Range Selector**: Filter data by time period
 - **Export Options**: Download logs in JSON or CSV format
 - **Settings Panel**: Configure dashboard preferences
+- 
+   ![dashabord1](dashboard1.png)  
+      ![dashboard2](dashboard2.png)  
 
 ---
 
